@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
@@ -42,7 +42,7 @@
     </header>
 
     <main class="centradopagina">
-        <h2 class="filtrado">CORONAVIRUS</h2>
+        <h2 class="centrado">CORONAVIRUS</h2>
         <div class="listaenfermedad">
             <div>
                 <img src="img/coronavirus.jpg" alt="coronavirus">
@@ -55,7 +55,7 @@
         </div>
 
         <section>
-            <h2 class="filtrado">FORMULARIO DE DETECCIÓN(TEST) DE CORONAVIRUS (COVID19)</h2>
+            <h2 class="centrado">FORMULARIO DE DETECCIÓN(TEST) DE CORONAVIRUS (COVID19)</h2>
             <div id="formulario">
                 <article class="formulario-izquierda">
                     <p>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto
@@ -64,20 +64,21 @@
                         Esta aplicación te permitirá hacer un seguimiento de la evolución de los
                         síntomas y te dará las indicaciones y consejos a seguir en cada caso.
                         El uso de este servicio supone la aceptación de los términos y la política de
-                        privacidad descritos en <a href="">'Ver las condiciones y políticas'”</a> </p>
-                    <h1 class="filtrado">SINTOMAS</h1>
+                        privacidad descritos en <a href="">'Ver las condiciones y políticas'”</a></p>
+                    <h1 class="centrado">SINTOMAS</h1>
                     <div class="medidas">
                         <img src="img/24-fiebre-dolor-garganta.png" alt="fiebre y dolor de garganta">
                         <img src="img/25-fiebre-dificultad-respirar.png" alt="fiebre y dificultad para respirar">
                         <img src="img/23-fiebre-tos.png" alt="fiebre y tos">
                     </div>
                 </article>
+                
                 <article class="formulario-derecha">
                     <form action="#" method="post" enctype="application/x-www-form-urlencoded">
                         <div class="row">
                             <label for="nameApe">Nombre y Apellido:</label>
                             <div>
-                                <input type="text" id="nombre" name="nombre">
+                                <input type="text" id="nameApe" name="nameApe">
                             </div>
                         </div>
                         <div class="row fila-compartida">
@@ -85,7 +86,6 @@
                             <div>
                                 <input type="text" id="dni" name="dni" class="halfinput">
                             </div>
-
                         </div>
                         <div class="row fila-compartida">
                             <label for="telefono">Teléfono:</label>
@@ -105,18 +105,15 @@
                                 <input type="radio" name="sexo" value="M" checked>M
                                 <input type="radio" name="sexo" value="F">F
                             </div>
-
                         </div>
-
                         <div id="preguntas">
                             <div class="row preguntas-flexible">
                                 <label for="exterior">Has viajado al exterior de la República Argentina?</label>
                                 <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked>No
+                                    <input type="radio" name="exterior" value="si">Si
+                                    <input type="radio" name="exterior" value="no" checked>No
                                 </div>
                             </div>
-
                             <div class="row" id="paises-visitados">
                                 <label for="viaje">Paises visitados</label>
                                 <select id="paises" name="paises">
@@ -128,46 +125,41 @@
                             </div>
                             <h4>Por favor indica los sintomas que presentas</h4>
                             <div class="row preguntas-flexible">
-                                <label for="titulo">Tuviste fiebre mayor a 38 grados?</label>
+                                <label for="fiebre">Tuviste fiebre mayor a 38 grados?</label>
                                 <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked>No
-                                </div>
-
-                            </div>
-                            <div class="row preguntas-flexible">
-                                <label for="titulo">Tuviste dolor de cabeza?</label>
-                                <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked>No
-                                </div>
-
-                            </div>
-                            <div class="row preguntas-flexible">
-                                <label for="titulo">Tuviste tos persistente?</label>
-                                <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked>No
+                                    <input type="radio" name="fiebre" value="si">Si
+                                    <input type="radio" name="fiebre" value="no" checked>No
                                 </div>
                             </div>
                             <div class="row preguntas-flexible">
-                                <label for="titulo">Tuviste dolor de garganta?</label>
+                                <label for="dolor">Tuviste dolor de cabeza?</label>
                                 <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked>No
+                                    <input type="radio" name="dolor" value="si">Si
+                                    <input type="radio" name="dolor" value="no" checked>No
                                 </div>
-
                             </div>
                             <div class="row preguntas-flexible">
-                                <label for="titulo">Tuviste dificultad para respirar?</label>
+                                <label for="tos">Tuviste tos persistente?</label>
                                 <div>
-                                    <input type="radio" name="si" value="si">Si
-                                    <input type="radio" name="no" checked> No
+                                    <input type="radio" name="tos" value="si">Si
+                                    <input type="radio" name="tos" value="no" checked>No
                                 </div>
-
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="garganta">Tuviste dolor de garganta?</label>
+                                <div>
+                                    <input type="radio" name="garganta" value="si">Si
+                                    <input type="radio" name="garganta" value="no" checked>No
+                                </div>
+                            </div>
+                            <div class="row preguntas-flexible">
+                                <label for="respiracion">Tuviste dificultad para respirar?</label>
+                                <div>
+                                    <input type="radio" name="respiracion" value="si">Si
+                                    <input type="radio" name="respiracion" value="no" checked> No
+                                </div>
                             </div>
                         </div>
-
                         <div class="row fila-compartida" id="direccion">
                             <label for="direccion">Direccion:</label>
                             <div>
@@ -185,11 +177,11 @@
                         </div>
                     </form>
                 </article>
-
             </div>
         </section>
+
         <section>
-            <h1 class="filtrado">MEDIDAS DE PRECAUCION</h1>
+            <h1 class="centrado">MEDIDAS DE PRECAUCION</h1>
             <article class="medidas precaucion">
                 <div>
                     <img src="img/14-lavarse-manos.png" alt="lavarse las manos">
@@ -199,7 +191,6 @@
                     <img src="img/15-estornudar.png" alt="estornudar">
                     <img src="img/17-ventilar.png" alt="ventilar">
                 </div>
-
                 <div>
                     <img src="img/18-limpiar-objetos.png" alt="limpiar objetos">
                     <img src="img/20-reducir-contacto.png" alt="reducir contacto">
@@ -208,14 +199,13 @@
                     <img src="img/19-permanecer-domicilio.png" alt="permanecer en el domicilio">
                     <img src="img/21-no-compartir-mate.png" alt="no compartir mate">
                 </div>
-
             </article>
 
             <section>
-                <h2 class="filtrado">HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
+                <h2 class="centrado">HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h2>
                 <article class="hospitalcercano">
                     <div class="imghospital">
-                        <h2 class="filtrado">HOSPITAL POSADAS</h2>
+                        <h2 class="centrado">HOSPITAL POSADAS</h2>
                         <p>+541144699300</p>
                         <p>Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386</p>
                         <p>Palomar</p>
@@ -231,26 +221,25 @@
                     </div>
                 </article>
             </section>
-
         </section>
     </main>
 
     <footer>
         <ul class="nombres-de-integrantes">
-            <li>Alejandro Acosta DNI 35396973</li>
-            <li>Otro Integrante DNI xxxxxxxx</li>
-            <li>Otro Integrante DNI xxxxxxxx</li>
+          <li>Alejandro Acosta DNI 35396973</li>
+          <li>Nadia Sierra DNI 28532901</li>
+          <li>Cristhian Fernandez Ren DNI 40015524</li>
         </ul>
         <ul>
-            <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
-            <li><a href="vacunas.html">Vacunas</a></li>
-            <li><a href="mapa.html">Hospitales</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="listado-de-enfermedades.html">Enfermedades</a></li>
+          <li><a href="vacunas.html">Vacunas</a></li>
+          <li><a href="mapa.html">Hospitales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <ul class="redes">
-            <li><a href=""><i class="fab fa-facebook"></i></a></i></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></i></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></i></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
         </ul>
     </footer>
 </body>
