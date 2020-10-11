@@ -1,12 +1,29 @@
-#slider {
-    display: flex;
-    height: 25em;
-    justify-content: center;
+#slider-container {
     margin: 2em 0;
 }
 
-#slider img {
+.slide-card {
+    display: flex;
+}
+.slide-card > div > img {
+    height: 25em;
+    width: 80vw;
+}
+
+.angle{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.angle a {
+    display: flex;
+    justify-content: center;
     width: 100%;
+}
+
+.hide {
+    display: none;
 }
 
 #links-img {
@@ -17,10 +34,8 @@
 }
 
 .roundimg {
-    border-color: #635b5b;
+    border: #635b5b 2.5px solid;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 2.5px;
     height: 7em;
     width: 7em;
 }
@@ -70,26 +85,29 @@
     font-size: 5em;
 }
 
-@media only screen and (max-width:580px) {
+@media only screen and (max-width:768px) {
 
-    #slider {
+   #slider-container {
+        justify-content: space-around;
+   }
+
+   .slide-card > div img {
         height: auto;
+        width: 15em;
+    }
+
+    .angle{
+        display: flex;
+        align-items: center;
     }
 
     .roundimg {
-        height: 7em;
-        width: 7em;
-        border-radius: 50%;
-        border-width: 2px;
-        border-color: #635b5b;
-        border-style: solid;
-
+       position: relative;
+       left: 20%;
     }
 
     #links-img {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #links-img p {
@@ -97,9 +115,9 @@
     }
 
     .sintomas {
-        background-color: #60a1eb;
-        height: 15em;
-        display: flex;
+        height: 10em;
+        flex-direction: column;
+        margin: 0;
     }
 
     #sintomas-llamar {
@@ -112,11 +130,7 @@
     
     .sintomas h1 {
         display: inline;
-        font-size: 1em;
-    }
-    
-    .sintomas p {
-        font-size: 1.2em;
+        font-size: 3em;
     }
     
     .sintomas h2 {

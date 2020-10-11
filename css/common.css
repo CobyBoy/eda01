@@ -11,15 +11,19 @@ a {
 }
 
 #text-buscador {
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 0.5em;
-    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 #text-buscador:focus {
-    border: #ccc solid;
+    border: rgb(170, 170, 170) 2px solid;
 }
 
+header {
+    background-color: #60a1eb;
+}
 header #img-buscador-container {
     display: flex;
     justify-content: space-evenly;
@@ -36,7 +40,7 @@ header #img-buscador-container {
 }
 
 #buscador-form button {
-    background-color: #0fc035;
+    background-color: #23e24c;
     border: 1px #3a3737 solid;
     border-radius: 4px;
     width: 10em;
@@ -53,14 +57,33 @@ header #img-buscador-container {
 }
 
 #navegacion ul {
-    background-color: #60a1eb;
     color: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-#navegacion li a:hover {
-    background-color: #66aaf7;
+#navegacion li {
+    padding: 1em;
+}
+
+#navegacion li:hover {
+    background-color: #498edd;
+}
+
+.centrado {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.centrado h1 {
+    padding: 0.6em;
+    text-align: center;
+}
+
+.centrado input {
+    background-color: #f0f0f0;
+    padding: 0.6em;
+    text-align: center;
 }
 
 footer {
@@ -83,8 +106,8 @@ footer li {
 }
 
 
-
-@media only screen and (max-width:600px) {
+/*570 or less*/
+@media only screen and (max-width:768px) {
     body {
         margin: 0;
         padding: 0;
@@ -93,7 +116,6 @@ footer li {
     header {
         display: flex;
         flex-direction: column;
-        background-color: #0ca02c;
     }
 
     #img-buscador-container {
@@ -115,15 +137,24 @@ footer li {
     #buscador-form {
         width: 100%;
     }
-    #navegacion{
-        width: 100%;
-        background-color: #60a1eb;
+
+    #buscador-form button {
+        width: 3em;
     }
 
+    #navegacion{
+        width: 100%;
+    }
+
+    #navegacion li {
+        padding: 0;
+    }
+
+    #navegacion li a{
+        padding: 0;
+    }
     #navegacion ul{
-       width: 80%;
-       margin: auto;
-        background-color: #60a1eb;
+       padding: .5em;
     }
 
     .img-buscador-container {
@@ -134,7 +165,12 @@ footer li {
     }
 
     footer {
-        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
     }
 
+    footer ul {
+        padding: 0;
+    }
 }

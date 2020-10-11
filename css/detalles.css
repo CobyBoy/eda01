@@ -6,6 +6,7 @@
 #formulario {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .formulario-izquierda {
@@ -16,11 +17,12 @@
   margin-bottom: 1.5em;
 }
 
-#nombre {
+#nameApe {
   background-color: #f7f5f5;
   border-radius: 0.2em;
   padding: 0.5em;
-  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .halfinput {
@@ -47,7 +49,8 @@
 
 select {
   border-radius: 0.2em;
-  width: 70%;
+  width: -webkit-fill-available;
+  width: -moz-available;
   padding: 0.5em;
 }
 
@@ -87,7 +90,56 @@ select {
 }
 
 .imghospital iframe {
-  align-content: center;
   height: 32em;
   width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+  .medidas {
+    display: block;
+  }
+
+  #formulario {
+    display: block;
+  }
+
+  .precaucion img {
+    height: 7.5em;
+  }
+
+  .formulario-izquierda {
+    width: 100%;
+  }
+
+  .formulario-izquierda p{
+    word-break: break-all;
+  }
+
+  .hospitalcercano {
+    display: block;
+  }
+
+  #nameApe {
+    width: -webkit-fill-available;
+    width: -moz-available;
+  }
+
+  select {
+    width: -moz-available;
+    width: -webkit-fill-available
+  }
+  .medidas {
+    flex-wrap: wrap;
+  }
+
+  .imghospital {
+    width: 100%;
+  }
+  .imghospital p {
+    line-height: initial;
+  }
+  .imghospital iframe {
+    height: auto;
+    width: 100%;
+}
 }

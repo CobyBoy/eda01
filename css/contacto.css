@@ -28,3 +28,13 @@ section .centradopagina {
     resize: none;
     width: 93%;
 }
+
+@media only screen and (max-width:768px) {
+    .contacto {
+        display: block;
+    }
+
+    section iframe {
+        width: 15em;
+    }
+}

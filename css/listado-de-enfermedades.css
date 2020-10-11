@@ -3,31 +3,9 @@
     width: 80%;
 }
 
-.filtrado {
-    margin: 2em 0;
-    text-align: center;
-}
-
-.filtrado h1 {
-    padding: 0.6em;
-    text-align: center;
-}
-
-.filtrado input {
-    background-color: #f0f0f0;
-    padding: 0.6em;
-    text-align: center;
-}
-
 li {
     list-style: none;
 }
-
-li a {
-    display: block;
-    padding: 0.4em;
-}
-
 
 .listaenfermedad {
     display: flex;
@@ -55,4 +33,24 @@ li a {
 
 .verdetalles:hover {
     background-color: #707474;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .listaenfermedad {
+
+        flex-direction: column;
+    }
+
+    .listaenfermedad div {
+        width: 100%;
+    }
+
+    .listaenfermedad div img {
+        width: 100%;
+    }
+    .listaenfermedad div h3 {
+        text-align: center;
+    }
 }
