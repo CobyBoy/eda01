@@ -111,7 +111,7 @@ select {
     width: 100%;
   }
 
-  .formulario-izquierda p{
+  .formulario-izquierda p {
     word-break: break-all;
   }
 
@@ -128,6 +128,7 @@ select {
     width: -moz-available;
     width: -webkit-fill-available
   }
+
   .medidas {
     flex-wrap: wrap;
   }
@@ -135,11 +136,13 @@ select {
   .imghospital {
     width: 100%;
   }
+
   .imghospital p {
     line-height: initial;
   }
+
   .imghospital iframe {
     height: auto;
     width: 100%;
-}
+  }
 }

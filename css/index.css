@@ -5,12 +5,13 @@
 .slide-card {
     display: flex;
 }
-.slide-card > div > img {
+
+.slide-card>div>img {
     height: 25em;
     width: 80vw;
 }
 
-.angle{
+.angle {
     display: flex;
     align-items: center;
     width: 20%;
@@ -81,29 +82,29 @@
     font-size: 4em;
 }
 
-.fa-phone-square-alt{
+.fa-phone-square-alt {
     font-size: 5em;
 }
 
 @media only screen and (max-width:768px) {
 
-   #slider-container {
+    #slider-container {
         justify-content: space-around;
-   }
+    }
 
-   .slide-card > div img {
+    .slide-card>div img {
         height: auto;
         width: 15em;
     }
 
-    .angle{
+    .angle {
         display: flex;
         align-items: center;
     }
 
     .roundimg {
-       position: relative;
-       left: 20%;
+        position: relative;
+        left: 20%;
     }
 
     #links-img {
@@ -123,20 +124,21 @@
     #sintomas-llamar {
         padding: 0;
     }
-    
+
     #numero-emergencia {
         padding: 0;
     }
-    
+
     .sintomas h1 {
         display: inline;
         font-size: 3em;
     }
-    
+
     .sintomas h2 {
         font-size: 1em;
     }
-     .fa-phone-square-alt{
+
+    .fa-phone-square-alt {
         font-size: 2em;
     }
 }
