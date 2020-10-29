@@ -74,7 +74,7 @@
                 </article>
 
                 <article class="formulario-derecha">
-                    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                    <form action="#" method="GET" enctype="application/x-www-form-urlencoded" id="formulario-de-detalles">
                         <div class="row">
                             <label for="nameApe">Nombre y Apellido:</label>
                             <div>
@@ -110,11 +110,11 @@
                             <div class="row preguntas-flexible">
                                 <label for="exterior">Has viajado al exterior de la República Argentina?</label>
                                 <div>
-                                    <input type="radio" name="exterior" value="si">Si
-                                    <input type="radio" name="exterior" value="no" checked>No
+                                    <input type="radio" name="exterior" value="si" onchange="displayPais(value)">Si
+                                    <input type="radio" name="exterior" value="no" onchange="displayPais(value)" checked>No
                                 </div>
                             </div>
-                            <div class="row" id="paises-visitados">
+                            <div class="row hide" id="paises-visitados">
                                 <label for="viaje">Paises visitados</label>
                                 <select id="paises" name="paises">
                                     <option value="Brasil">Brasil</option>
@@ -155,21 +155,21 @@
                             <div class="row preguntas-flexible">
                                 <label for="respiracion">Tuviste dificultad para respirar?</label>
                                 <div>
-                                    <input type="radio" name="respiracion" value="si">Si
-                                    <input type="radio" name="respiracion" value="no" checked> No
+                                    <input type="radio" name="respiracion" value="si" onchange="displayDireccion(value)">Si
+                                    <input type="radio" name="respiracion" value="no" onchange="displayDireccion(value)"checked> No
                                 </div>
                             </div>
                         </div>
-                        <div class="row fila-compartida" id="direccion">
+                        <div class="row hide" id="direccion">
                             <label for="direccion">Direccion:</label>
                             <div>
-                                <input type="text" class="halfinput">
+                                <input type="text" class="halfinput" name="direccion">
                             </div>
                         </div>
-                        <div class="row fila-compartida" id="ciudad">
+                        <div class="row hide" id="ciudad">
                             <label for="ciudad">Ciudad:</label>
                             <div>
-                                <input type="text" class="halfinput">
+                                <input type="text" class="halfinput" name="ciudad">
                             </div>
                         </div>
                         <div class="enviarBtnEnd">
@@ -242,6 +242,7 @@
             <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
         </ul>
     </footer>
+    <script src="js/index.js"></script>
+    <script src="js/response.js"></script>
 </body>
-
 </html>

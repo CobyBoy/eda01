@@ -67,10 +67,6 @@ select {
   height: 10em;
 }
 
-#paises-visitados {
-  display: block;
-}
-
 .hospitalcercano {
   display: flex;
   justify-content: space-between;
