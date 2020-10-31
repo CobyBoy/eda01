@@ -46,10 +46,10 @@
     <section class="contacto centradopagina">
       <article>
         <h2 class="centrado">CONTACTO</h2>
-        <form action="" method="post" id="contacto">
+        <form action="" method="post" id="contacto" onsubmit="return validar()">
           <div class="row">
             <div>
-              <input type="text" id="nombre-contacto" placeholder="Nombre y Apellido" class="contactos" required>
+              <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Nombre y Apellido" class="contactos" required>
             </div>
           </div>
           <div class="row">
@@ -63,10 +63,13 @@
             </div>
           </div>
           <div class="row">
-            <textarea name="" id="consulta" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+            <textarea name="" id="consulta" cols="30" rows="10" onkeyup="contarCaracteres()" placeholder="Ingrese su consulta"></textarea>
+              <p>Le restan <span id="caracteres">1000 de </span>/1000</p>
           </div>
           <div class="enviarBtnEnd">
             <input type="submit" value="Enviar" class="verdetalles">
+          </div>
+          <div id="mensaje" class="error">
           </div>
         </form>
       </article>
