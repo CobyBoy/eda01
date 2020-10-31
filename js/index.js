@@ -3,14 +3,16 @@ let paisesVisitados = document.getElementById("paises-visitados");
 let direccion = document.getElementById("direccion");
 let ciudad = document.getElementById("ciudad");
 let formDetalles = document.getElementById('formulario-de-detalles');
-
+let regexCampoNumerico = /^[0-9]{4}\-[0-9]{4}$/;
+let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[a-zA-Z]+$/;
+const CARACTERES = 1000;
 
 function displayPais(params) {
         if (params == "si")  
             paisesVisitados.style.display='block';
         else 
             paisesVisitados.style.display='none'   
-}
+};
 
 function displayDireccion(params) {
         if (params == "si")  {
@@ -21,10 +23,7 @@ function displayDireccion(params) {
             direccion.style.display='none';
             ciudad.style.display='none';
         } 
-}
-
-var regexCampoNumerico=/^[A-Z]{4}+\-[0-9]{4}$/
-var regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/
+};
 
 function validar(){
     var error=false;
@@ -48,8 +47,6 @@ function validar(){
         return true;
     }
 }
-
-const CARACTERES=1000;
 
 function contarCaracteres() {
     var caracteresEscritos=document.getElementById("consulta").value.length;
