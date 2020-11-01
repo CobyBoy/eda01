@@ -74,23 +74,23 @@
                 </article>
 
                 <article class="formulario-derecha">
-                    <form action="#" method="GET" enctype="application/x-www-form-urlencoded" id="formulario-de-detalles">
+                    <form action="#" method="GET" enctype="application/x-www-form-urlencoded" id="formulario-de-detalles" onsubmit="return validardatos()">
                         <div class="row">
-                            <label for="nameApe">Nombre y Apellido:</label>
+                            <label for="name">Nombre y Apellido:</label>
                             <div>
-                                <input type="text" id="nameApe" name="nameApe">
+                                <input type="text" id="name" name="name">
                             </div>
                         </div>
                         <div class="row fila-compartida">
                             <label for="dni">DNI:</label>
                             <div>
-                                <input type="text" id="dni" name="dni" class="halfinput">
+                                <input type="text" id="dni" name="dni" class="halfinput" >
                             </div>
                         </div>
                         <div class="row fila-compartida">
                             <label for="telefono">Teléfono:</label>
                             <div>
-                                <input type="tel" id="telefono" name="telefono" class="halfinput">
+                                <input type="tel" id="telefono" name="telefono" class="halfinput" >
                             </div>
                         </div>
                         <div class="row">
@@ -102,7 +102,7 @@
                             </div>
                             <div class="fila-compartida">
                                 <label for="sexo">Sexo</label>
-                                <input type="radio" name="sexo" value="M" checked>M
+                                <input type="radio" name="sexo" value="M">M
                                 <input type="radio" name="sexo" value="F">F
                             </div>
                         </div>
@@ -110,8 +110,8 @@
                             <div class="row preguntas-flexible">
                                 <label for="exterior">Has viajado al exterior de la República Argentina?</label>
                                 <div>
-                                    <input type="radio" name="exterior" value="si" onchange="displayPais(value)">Si
-                                    <input type="radio" name="exterior" value="no" onchange="displayPais(value)" checked>No
+                                    <input type="radio" name="exterior" value="si" onchange="displayPais(value)" >Si
+                                    <input type="radio" name="exterior" value="no" onchange="displayPais(value)" >No
                                 </div>
                             </div>
                             <div class="row hide" id="paises-visitados">
@@ -127,53 +127,56 @@
                             <div class="row preguntas-flexible">
                                 <label for="fiebre">Tuviste fiebre mayor a 38 grados?</label>
                                 <div>
-                                    <input type="radio" name="fiebre" value="si">Si
-                                    <input type="radio" name="fiebre" value="no" checked>No
+                                    <input type="radio" name="fiebre" value="si" >Si
+                                    <input type="radio" name="fiebre" value="no" >No
                                 </div>
                             </div>
                             <div class="row preguntas-flexible">
                                 <label for="dolor">Tuviste dolor de cabeza?</label>
                                 <div>
-                                    <input type="radio" name="dolor" value="si">Si
-                                    <input type="radio" name="dolor" value="no" checked>No
+                                    <input type="radio" name="dolor" value="si" >Si
+                                    <input type="radio" name="dolor" value="no" >No
                                 </div>
                             </div>
                             <div class="row preguntas-flexible">
                                 <label for="tos">Tuviste tos persistente?</label>
                                 <div>
-                                    <input type="radio" name="tos" value="si">Si
-                                    <input type="radio" name="tos" value="no" checked>No
+                                    <input type="radio" name="tos" value="si" >Si
+                                    <input type="radio" name="tos" value="no" >No
                                 </div>
                             </div>
                             <div class="row preguntas-flexible">
                                 <label for="garganta">Tuviste dolor de garganta?</label>
                                 <div>
-                                    <input type="radio" name="garganta" value="si">Si
-                                    <input type="radio" name="garganta" value="no" checked>No
+                                    <input type="radio" name="garganta" value="si" >Si
+                                    <input type="radio" name="garganta" value="no" >No
                                 </div>
                             </div>
                             <div class="row preguntas-flexible">
                                 <label for="respiracion">Tuviste dificultad para respirar?</label>
                                 <div>
-                                    <input type="radio" name="respiracion" value="si" onchange="displayDireccion(value)">Si
-                                    <input type="radio" name="respiracion" value="no" onchange="displayDireccion(value)"checked> No
+                                    <input type="radio" name="respiracion" value="si" onchange="displayDireccion(value)" >Si
+                                    <input type="radio" name="respiracion" value="no" onchange="displayDireccion(value)" >No
                                 </div>
                             </div>
                         </div>
                         <div class="row hide" id="direccion">
                             <label for="direccion">Direccion:</label>
                             <div>
-                                <input type="text" class="halfinput" name="direccion">
+                                <input type="text" class="halfinput" name="direccion" id="direccion" >
                             </div>
                         </div>
                         <div class="row hide" id="ciudad">
                             <label for="ciudad">Ciudad:</label>
                             <div>
-                                <input type="text" class="halfinput" name="ciudad">
+                                <input type="text" class="halfinput" name="ciudad" id="ciudad">
                             </div>
                         </div>
                         <div class="enviarBtnEnd">
                             <input type="submit" value="Enviar test" class="verdetalles">
+                        </div>
+                        <div id="mensaje" class="error">
+                            
                         </div>
                     </form>
                 </article>
@@ -243,5 +246,6 @@
         </ul>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/detalles.js"></script>
 </body>
 </html>
