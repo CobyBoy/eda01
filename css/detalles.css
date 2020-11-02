@@ -47,6 +47,18 @@
   justify-content: end;
 }
 
+.error>p {
+  font-style: italic;
+  color: #fa2727;
+  font-weight: bold;
+}
+
+.sinError {
+  font-style: italic;
+  color: #03bb03;
+  font-weight: bold;
+}
+
 select {
   border-radius: 0.2em;
   width: -webkit-fill-available;
