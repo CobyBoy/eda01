@@ -3,10 +3,10 @@
     justify-content: space-around;
 }
 
-section iframe {
-    display: flex;
-    margin: auto;
-    margin-bottom: 2em;
+
+.mapa-contacto iframe {
+    width: 100%;
+    height: 32em;
 }
 
 section .centradopagina {
