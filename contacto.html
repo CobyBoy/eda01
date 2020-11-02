@@ -46,25 +46,27 @@
     <section class="contacto centradopagina">
       <article>
         <h2 class="centrado">CONTACTO</h2>
-        <form action="" method="post" id="contacto" onsubmit="return validar()">
+        <form action="" method="post" id="contacto" onsubmit="return validar(event)">
           <div class="row">
             <div>
-              <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Nombre y Apellido" class="contactos" required>
+              <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Nombre y Apellido"
+                class="contactos">
             </div>
           </div>
           <div class="row">
             <div>
-              <input type="email" id="email-contacto" placeholder="Email" class="contactos" required>
+              <input type="email" id="email-contacto" placeholder="Email" class="contactos">
             </div>
           </div>
           <div class="row">
             <div>
-              <input type="tel" id="telefono-contacto" placeholder="telefono" class="contactos" required>
+              <input type="tel" id="telefono-contacto" placeholder="telefono" class="contactos">
             </div>
           </div>
           <div class="row">
-            <textarea name="" id="consulta" cols="30" rows="10" onkeydown="contarCaracteres()" placeholder="Ingrese su consulta"></textarea>
-              <p>Le restan <span id="caracteres">1000 de </span>/1000</p>
+            <textarea name="" id="consulta" cols="30" rows="10" maxlength="1000" placeholder="Ingrese su consulta"
+              onkeyup="contarCaracteres()"></textarea>
+            <p>Le restan <span id="caracteres">1000</span>/1000 caracteres</p>
           </div>
           <div class="enviarBtnEnd">
             <input type="submit" value="Enviar" class="verdetalles">
@@ -84,9 +86,11 @@
 
     <section class="centradopagina">
       <h2 class="centrado">Ubicación</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52523.36803268188!2d-58.638833836520206!3d-34.63675543133855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7240223731c2cb67!2sSwiss%20Medical%20Medicina%20Privada%20-%20Sucursal%20Ramos%20Mej%C3%ADa!5e0!3m2!1ses!2sar!4v1601783709596!5m2!1ses!2sar"
-        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="mapa-contacto">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52523.36803268188!2d-58.638833836520206!3d-34.63675543133855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7240223731c2cb67!2sSwiss%20Medical%20Medicina%20Privada%20-%20Sucursal%20Ramos%20Mej%C3%ADa!5e0!3m2!1ses!2sar!4v1601783709596!5m2!1ses!2sar"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
     </section>
 
   </main>
