@@ -165,11 +165,6 @@ function validardatos(event) {
 
     function sumarSintomas() {
         let contador = 0;
-        for (const pais in exterior) {
-            if (exterior[pais].checked && exterior[pais].value == "si") {
-                contador++;
-            }
-        }
         for (const f in fiebre) {
             if (fiebre[f].checked && fiebre[f].value == "si") {
                 contador++;
