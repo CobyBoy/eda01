@@ -194,8 +194,9 @@ function validardatos(event) {
 
     }
 }
-
-formDetalles.addEventListener('change', () => mensaje.innerHTML = "")
+function limpiarErrores() {
+    mensaje.innerHTML = " ";
+}
 
 //Contacto
 function validar(event) {
