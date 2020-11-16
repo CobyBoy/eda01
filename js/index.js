@@ -194,6 +194,7 @@ function validardatos(event) {
 
     }
 }
+
 function limpiarErrores() {
     mensaje.innerHTML = " ";
 }
@@ -230,3 +231,13 @@ function contarCaracteres() {
     var restantes = CARACTERES - caracteresEscritos;
     document.getElementById("caracteres").innerHTML = restantes;
 }
+
+//Slider
+$(document).ready(function () {
+    $('.slider-container').slick({
+        infinite: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+});
