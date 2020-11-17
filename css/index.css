@@ -140,7 +140,7 @@
 
     .slide-card>div img {
         height: 10em;
-        width: 15em;
+        width: 100%;
     }
 
     .roundimg {

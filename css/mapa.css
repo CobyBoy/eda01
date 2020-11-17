@@ -7,35 +7,72 @@
     width: 100%;
 }
 
-a{
-    color: #000;
+a {
     text-decoration: none;
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
 
-.hospitales-disponibles{
-	margin: 1em 0;
-	text-align: center;
+.hospitales-disponibles {
+    margin: 1em 0;
+    text-align: center;
 }
 
-.popup{
-
-	background-color:skyblue;
-    width: 20%;
-    height: 300px;
+.popup {
+    background-color: skyblue;
+    width: 60%;
+    font-size: larger;
+    height: auto;
     text-align: center;
     position: fixed;
-    z-index:2;
-    top:30px;
-    display:none;
+    z-index: 2;
+    top: 5%;
+    padding: 5em;
+    margin: 7em;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.24), 10px 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnPopUp {
+    background-color: #0cb832;
+    border: 1px #3a3737 solid;
+    border-radius: 4px;
+    width: 10em;
+    padding: 0.5em;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+.btnPopUp:hover {
+    background-color: #0ca02c;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 @media only screen and (max-width:768px) {
     .hospital iframe {
         height: auto;
         width: 100%;
+    }
+
+    .popup {
+
+        background-color: skyblue;
+        width: 60%;
+        font-size: small;
+        height: auto;
+        text-align: center;
+        position: fixed;
+        z-index: 2;
+        top: 30%;
+        padding: 2em;
+        margin: 0.3em;
+        display: none;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.24), 10px 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
 }
