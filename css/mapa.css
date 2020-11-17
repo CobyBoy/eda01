@@ -7,6 +7,32 @@
     width: 100%;
 }
 
+a{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.hospitales-disponibles{
+	margin: 1em 0;
+	text-align: center;
+}
+
+.popup{
+
+	background-color:skyblue;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    position: fixed;
+    z-index:2;
+    top:30px;
+    display:none;
+}
+
 @media only screen and (max-width:768px) {
     .hospital iframe {
         height: auto;
