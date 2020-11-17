@@ -1,0 +1,39 @@
+#calendario{
+    width: 58%;
+    margin: auto;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#calendario .fc-button{
+background-color: #237de4;
+}
+
+#calendario .fc-content{
+background-color: #eb0d0d;
+text-align: center;
+}
+
+#calendario .fc-today {
+    background-color: #ffffff;
+    border-color: #ddd;
+
+}
+
+#calendario .fc-today .fc-day-number{
+    background-color: #23e24c;
+    border-radius: 50%;
+}
+
+#calendario .fc-day-number{
+    float: left;
+}
+
+#calendario h2{
+font-style: italic;
+text-transform: capitalize;
+}
+
+#calendario .fc-day-header{
+    background-color:#3a8dec;
+}
