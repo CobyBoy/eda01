@@ -235,9 +235,40 @@ function contarCaracteres() {
 //Slider
 $(document).ready(function () {
     $('.slider-container').slick({
-        slidesToShow: 1,
+        infinite: true,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
     });
 });
+
+//Popup Mapa
+$(document).ready(function(){
+    $("#abrir1").click(function(){
+       
+        $("#pop1").fadeIn();
+    });
+    $("#cerrar1").click(function(){
+      
+        $("#pop1").fadeOut();
+    });
+  
+    });
+    $(document).ready(function(){
+        $("#abrir2").click(function(){
+            $("#pop2").fadeIn();
+        });
+        $("#cerrar2").click(function(){
+            $("#pop2").fadeOut();
+        });
+      
+        });
+        $(document).ready(function(){
+            $("#abrir3").click(function(){
+                $("#pop3").fadeIn();
+            });
+            $("#cerrar3").click(function(){
+                $("#pop3").fadeOut();
+            });
+          
+            });
